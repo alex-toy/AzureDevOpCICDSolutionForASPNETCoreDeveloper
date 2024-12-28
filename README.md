@@ -24,3 +24,10 @@
 - add sprint
 <img src="/pictures/backlog.png" title="backlog"  width="900">
 
+## Self-Hosted Agent
+
+- add VM. Choose windows 2019 Gen2
+
+- turn *enhanced security configurations off*
+<img src="/pictures/agent.png" title="agent"  width="900">
+

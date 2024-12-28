@@ -1,3 +1,7 @@
+using BlogWebApp.Repo;
+using BlogWebApp.Services.Articles;
+using Microsoft.EntityFrameworkCore;
+
 namespace BlogWebApp
 {
     public class Program
@@ -5,6 +9,15 @@ namespace BlogWebApp
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+
+            string connectionString = builder.Configuration.GetConnectionString("BlogConnectionString")!;
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            {
+                options.UseSqlServer(connectionString);
+            });
+
+            builder.Services.AddScoped<IArticleService, ArticleService>();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

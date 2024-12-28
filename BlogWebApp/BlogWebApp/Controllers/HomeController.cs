@@ -1,4 +1,6 @@
+using BlogWebApp.Entities;
 using BlogWebApp.Models;
+using BlogWebApp.Services.Articles;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -8,20 +10,24 @@ namespace BlogWebApp.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IConfiguration _configuration;
+        private readonly IArticleService _articleService;
 
-        public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration, IArticleService articleService)
         {
             _logger = logger;
             _configuration = configuration;
+            _articleService = articleService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             ViewBag.Environment = _configuration["ASPNETCORE_ENVIRONMENT"];
             ViewBag.Custom = _configuration["Custom"];
             ViewBag.SubTitle = _configuration.GetSection("SubTitle").Value;
             ViewBag.FooterTitle = _configuration.GetSection("FooterTitle").Value;
-            return View();
+
+            IEnumerable<Article> articles = await _articleService.GetAllAsync();
+            return View(articles);
         }
 
         public IActionResult Privacy()
