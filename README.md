@@ -23,6 +23,13 @@
 - the app should be working fine on all environments
 <img src="/pictures/webapp4.png" title="web app"  width="900">
 
+
+## CI/CD
+
+- create pipeline
+<img src="/pictures/cicd.png" title="ci/cd"  width="900">
+
+
 ## Devops
 
 ### Project Settings
