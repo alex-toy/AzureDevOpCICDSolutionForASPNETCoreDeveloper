@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IndexModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,4 +8,13 @@
     <h1 class="display-4">Welcome</h1>
     <p>Welcome to @ViewBag.Environment</p>
     <p>Custom : @ViewBag.Custom</p>
+
+    @foreach(var article in Model.Articles)
+    {
+        <div class="card mb-4">
+            <h2>@article.Title</h2>
+            <p>@article.Description</p>
+            <p>@article.PubDate</p>
+        </div>
+    }
 </div>

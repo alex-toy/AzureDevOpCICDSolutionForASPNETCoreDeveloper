@@ -27,7 +27,7 @@ namespace BlogWebApp.Controllers
             ViewBag.FooterTitle = _configuration.GetSection("FooterTitle").Value;
 
             IEnumerable<Article> articles = await _articleService.GetAllAsync();
-            return View(articles);
+            return View(new IndexModel { Articles = articles });
         }
 
         public IActionResult Privacy()
