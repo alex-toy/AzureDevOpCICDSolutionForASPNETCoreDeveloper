@@ -17,6 +17,11 @@
 - publish
 <img src="/pictures/webapp2.png" title="web app"  width="900">
 
+- select *Tools/SQL Server/New Data Comparison* . Then connect to local and Azure databases
+<img src="/pictures/webapp3.png" title="web app"  width="900">
+
+- the app should be working fine on all environments
+<img src="/pictures/webapp4.png" title="web app"  width="900">
 
 ## Devops
 
