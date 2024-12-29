@@ -47,9 +47,17 @@
 - name it *Development*
 <img src="/pictures/cicd31.png" title="ci/cd"  width="900">
 
-- choose ASP.NET Core. Rename pipeline as *BlogWeb-Dev*
+- choose App Service
 <img src="/pictures/cicd4.png" title="ci/cd"  width="900">
 
+- add artifact
+<img src="/pictures/cicd5.png" title="ci/cd"  width="900">
+
+- add continuous deployment. Choose branch *develop*
+<img src="/pictures/cicd6.png" title="ci/cd"  width="900">
+
+
+## Devops
 
 ### Project Settings
 
