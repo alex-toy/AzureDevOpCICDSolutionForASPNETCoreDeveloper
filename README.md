@@ -36,17 +36,20 @@
 - enable CI/CD on branch develop
 <img src="/pictures/cicd1.png" title="ci/cd"  width="900">
 
-- running the pipeline qhould result in artifacts
+- running the pipeline should result in artifacts
 <img src="/pictures/cicd2.png" title="ci/cd"  width="900">
 
-
-## CD Pipeline
+### CD Pipeline
 
 - create *Azure App Service Deployment*
 <img src="/pictures/cicd3.png" title="ci/cd"  width="900">
 
+- name it *Development*
+<img src="/pictures/cicd31.png" title="ci/cd"  width="900">
+
 - choose ASP.NET Core. Rename pipeline as *BlogWeb-Dev*
 <img src="/pictures/cicd4.png" title="ci/cd"  width="900">
+
 
 ### Project Settings
 
