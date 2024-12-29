@@ -56,6 +56,9 @@
 - add continuous deployment. Choose branch *develop*
 <img src="/pictures/cicd6.png" title="ci/cd"  width="900">
 
+- pushing to develop should automatically trigger the pipeline
+<img src="/pictures/cicd7.png" title="ci/cd"  width="900">
+
 
 ## Devops
 
