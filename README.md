@@ -39,14 +39,8 @@
 - running the pipeline qhould result in artifacts
 <img src="/pictures/cicd2.png" title="ci/cd"  width="900">
 
-- enable CI/CD on branch develop
-<img src="/pictures/cicd1.png" title="ci/cd"  width="900">
 
-- running the pipeline qhould result in artifacts
-<img src="/pictures/cicd2.png" title="ci/cd"  width="900">
-
-
-## CD Pipeline
+## Devops
 
 - create *Azure App Service Deployment*
 <img src="/pictures/cicd3.png" title="ci/cd"  width="900">
