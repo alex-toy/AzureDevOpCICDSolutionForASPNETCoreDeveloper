@@ -59,6 +59,21 @@
 - pushing to develop should automatically trigger the pipeline
 <img src="/pictures/cicd7.png" title="ci/cd"  width="900">
 
+### Azure Key Vault
+
+- create Azure Key Vault. Choose *Vault Access Policy*
+<img src="/pictures/vault.png" title="azure key vault"  width="900">
+
+- create secret
+<img src="/pictures/vault1.png" title="azure key vault"  width="900">
+
+- add variable to the library in the pipeline
+<img src="/pictures/vault2.png" title="azure key vault"  width="900">
+
+- lint it to the variable group in the release pipeline. Choose stage release
+<img src="/pictures/vault3.png" title="azure key vault"  width="900">
+<img src="/pictures/vault31.png" title="azure key vault"  width="900">
+
 
 ## Devops
 
